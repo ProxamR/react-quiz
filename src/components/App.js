@@ -50,7 +50,7 @@ function reducer(state,action){
       };
       case "restart":
         return{...intialState,
-        status: "ready", questions: state.questions };
+        status: "ready", questions: state.questions, highscore: state.highscore };
       case "tick":
         return {
           ...state,
